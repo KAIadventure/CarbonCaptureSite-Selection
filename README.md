@@ -17,7 +17,7 @@ With a dataset full of imaginary geological factors like temperature, pressure, 
 ## What I Learned 💡
 - **Importance of Features**: Thanks to CART, I could see which factors (like temperature and pressure) are really pulling their weight when it comes to CO<sub>2</sub> storage potential.
 - **When Linear Isn’t Enough**: The linear model gave a good baseline, but CART shone when it came to more complex interactions. Now I see why it’s handy to have a mix of simple and complex models in the toolkit!
-- **How to Prune a Tree 🌳**: This was big! In a previous project (predicting rainfall), I skipped pruning, and my model took forever to run. Here, I finally learned to prune the CART model to avoid overfitting and keep things snappy.
+- **How to Prune a Tree 🌳**: Unlike my previous project (rainfall prediction), where I used XGBoost, LightGBM, and Random Forest—which don’t really need pruning—I had to prune CART to stop it from growing into an overly complex tree. Without pruning, it can overfit and take forever to train! ✂️
 
 ## Limitations ⚠️
 - **Overfitting with CART**: Without proper pruning, the **CART model** may fit the training data too closely and lose its ability to generalise well to new, unseen data.
